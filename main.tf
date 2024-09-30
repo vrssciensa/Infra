@@ -1,6 +1,6 @@
 provider "null" {}
 
-resource "null_resource" "example" {
+resource "valhalla_resource" "example" {
   triggers = {
     always_run = "${timestamp()}"
   }
